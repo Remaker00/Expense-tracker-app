@@ -29,7 +29,7 @@ app.use('/resetpassword', resetpasswordRoutes);
 
 mongoose
   .connect(
-    'mongodb+srv://nishant9:Nishant9@cluster1.xnbtvyr.mongodb.net/Expense_Tracker?retryWrites=true'
+    'mongodb+srv://nishant9:Nishant9@cluster0.o1xccms.mongodb.net/Expense_Tracker?retryWrites=true'
   )
   .then(() => {
     app.listen(4000, () => {
