@@ -6,24 +6,45 @@ body, h1, p {
 
 /* Apply a background color to the body */
 body {
+    background-image: url('./images/image1.webp');
+    background-size: cover;
     background-color: #04040491;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide content outside the viewport */
 }
 
 /* Container styles */
 .container {
+    border: 3px solid rgb(17, 5, 240);
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #17db5b43;
+    background-color: #0ce95933;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideFromTop 2s ease-in-out, fadeIn 1s ease-in-out; /* Apply slideFromTop and fadeIn animations */
+    opacity: 1; /* Set opacity to 1 to keep it visible */
+    transition: opacity 1s ease-in-out; /* Add opacity transition */
 }
 
 /* Page title styles */
 h1 {
+    color: rgba(255, 253, 253, 0.984);
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
+    animation: moveUpDown 4s ease-in-out infinite; /* Apply moveUpDown animation infinitely */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start position: no vertical translation */
+    }
+    50% {
+        transform: translateY(-20px); /* Middle position: move up 20px */
+    }
+    100% {
+        transform: translateY(0); /* End position: back to original position */
+    }
 }
 
 /* Form styles */
@@ -32,6 +53,8 @@ form {
 }
 
 label {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.305);
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -43,47 +66,42 @@ select {
     width: 80%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 2px solid #1fe259;
     border-radius: 4px;
 }
 
-button[type="submit"] {
-    background-color: #077dfb;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-}
+button[type="submit"],
 #rzp-button1 {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #1b201dbd;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s ease-in-out; /* Add background color transition */
 }
 
-button[type="submit"]:hover{
-    background-color: #0056b3;
-}
-#rzp-button1:hover  {
-    background-color: #000000;
-    color: #fff;
+button[type="submit"]:hover,
+#rzp-button1:hover {
+    background-color: #0056b3; /* Change background color on hover */
 }
 
 /* Expense list styles */
 #user-list {
+    background-color: rgba(0, 0, 0, 0.39);
+    margin-left: 25%;
+    margin-right: 25%;
     list-style: none;
     padding: 0;
     text-align: center;
+    border: 2px solid rgb(33, 185, 250);
+    border-radius: 10px;
 }
 
 #user-list li {
-    background-color: #f9f9f9;
     padding: 8px;
+    color: aqua;
 }
 
 /* Premium section styles */
@@ -95,33 +113,27 @@ button[type="submit"]:hover{
     border: 1px solid rgb(26, 93, 238);
 }
 
-
 /* Footer paragraph styles */
 p {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
+    color: white;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    /* Adjust the gap as needed */
-    
+    gap: 20px; /* Adjust the gap as needed */
 }
 
 .button-container button {
-    padding: 10px 20px;
-    /* Adjust the padding as needed */
-    background-color: #007bff;
-    /* Change the background color */
-    color: #fff;
-    /* Change the text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #1ade2768; /* Change the background color */
+    color: #fff; /* Change the text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    /* Adjust the font size as needed */
+    font-size: 16px; /* Adjust the font size as needed */
 }

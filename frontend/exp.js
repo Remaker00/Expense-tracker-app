@@ -78,7 +78,7 @@ function fetchUsers() {
             if (expenses.hasOwnProperty(key)) {
                 const expense = expenses[key];
                 const li = document.createElement('li');
-                li.textContent = `${expense.expense} - ${expense.description} - ${expense.category}`;
+                li.textContent = `${expense.expense} - ${expense.description} - ${expense.category}  `;
 
                 const deleteButton = document.createElement('button');
                 deleteButton.textContent = 'Delete';
