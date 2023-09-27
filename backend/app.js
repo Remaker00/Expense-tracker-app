@@ -26,11 +26,10 @@ app.use('/premium', premiumRoutes);
 app.use('/password', passwordRoutes);
 app.use('/resetpassword', resetpasswordRoutes);
 
+const mongoURI = process.env.MONGO_URI;
 
 mongoose
-  .connect(
-    'mongodb+srv://nishant9:Nishant9@cluster0.o1xccms.mongodb.net/Expense_Tracker?retryWrites=true'
-  )
+  .connect(mongoURI)
   .then(() => {
     app.listen(4000, () => {
       console.log('App started');
