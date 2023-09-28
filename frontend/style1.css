@@ -1,6 +1,5 @@
-/* Reset some default browser styles */
 body,
-h1,
+h2,
 p {
     margin: 0;
     padding: 0;
@@ -12,20 +11,17 @@ body {
     background-size: cover;
     background-color: #04040491;
     font-family: Arial, sans-serif;
-    overflow: hidden;
-    /* Hide content outside the viewport */
 }
 
 /* Container styles */
 .container {
     border: 3px solid rgb(2, 230, 74);
-    max-width: 800px;
+    max-width: 90%; /* Use relative width for better mobile responsiveness */
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%; /* Use relative padding for better mobile responsiveness */
     background-color: #0ce95933;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: slideFromTop 1s ease-in-out, fadeIn 1s ease-in-out;
-
     transition: opacity 2s ease-in-out;
 }
 
@@ -54,13 +50,12 @@ body {
 }
 
 /* Page title styles */
-h1 {
+h2 {
     color: rgba(255, 253, 253, 0.984);
-    font-size: 28px;
+    font-size: 7vw; /* Use relative font size for better mobile responsiveness */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 4vw; /* Use relative margin for better mobile responsiveness */
     animation: moveUpDown 4s ease-in-out infinite;
-    /* Apply moveUpDown animation infinitely */
 }
 
 @keyframes moveUpDown {
@@ -80,7 +75,6 @@ h1 {
     }
 }
 
-/* Form styles */
 form {
     text-align: center;
 }
@@ -89,16 +83,16 @@ label {
     color: white;
     background-color: rgba(0, 0, 0, 0.053);
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2%; /* Use relative margin for better mobile responsiveness */
     font-weight: bold;
 }
 
 input[type="number"],
 input[type="text"],
 select {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 15px;
+    width: 90%; /* Use relative width for better mobile responsiveness */
+    padding: 3%; /* Use relative padding for better mobile responsiveness */
+    margin-bottom: 4%; /* Use relative margin for better mobile responsiveness */
     border: 2px solid #1fe259;
     border-radius: 4px;
 }
@@ -108,25 +102,23 @@ button[type="submit"],
     background-color: #1b201dbd;
     color: #fff;
     border: 2px solid rgba(47, 156, 240, 0.853);
-    padding: 10px;
-    margin-top: 0.5%;
-    font-size: 16px;
+    padding: 3%; /* Use relative padding for better mobile responsiveness */
+    margin-top: 1%; /* Use relative margin for better mobile responsiveness */
+    font-size: 4vw; /* Use relative font size for better mobile responsiveness */
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease-in-out;
-    /* Add background color transition */
 }
 
 button[type="submit"]:hover,
 #rzp-button1:hover {
     background-color: #0056b3;
-    /* Change background color on hover */
 }
 
 /* Expense list styles */
 #user-list {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     list-style: none;
     padding: 0;
     text-align: center;
@@ -136,7 +128,7 @@ button[type="submit"]:hover,
 #user-list li {
     background-color: rgba(0, 0, 0, 0.39);
     margin-top: 2%;
-    padding: 8px;
+    padding: 2%; /* Use relative padding for better mobile responsiveness */
     color: aqua;
     border: 2px solid black;
     border-radius: 10px;
@@ -154,29 +146,24 @@ button[type="submit"]:hover,
 /* Footer paragraph styles */
 p {
     text-align: center;
-    font-size: 18px;
+    font-size: 4vw; /* Use relative font size for better mobile responsiveness */
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 4%; /* Use relative margin for better mobile responsiveness */
     color: white;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    /* Adjust the gap as needed */
+    gap: 4%; /* Use relative gap for better mobile responsiveness */
 }
 
 .button-container button {
-    padding: 10px 20px;
-    /* Adjust the padding as needed */
+    padding: 3% 6%; /* Use relative padding for better mobile responsiveness */
     background-color: #1ade2768;
-    /* Change the background color */
     color: #fff;
-    /* Change the text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    /* Adjust the font size as needed */
+    font-size: 4vw; /* Use relative font size for better mobile responsiveness */
 }
