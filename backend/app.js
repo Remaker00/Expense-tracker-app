@@ -29,9 +29,7 @@ app.use('/resetpassword', resetpasswordRoutes);
 const mongoURI = process.env.MONGO_URI;
 
 mongoose
-  .connect(
-    'mongodb+srv://nishant9:Nishant9@cluster2.hfphacf.mongodb.net/Expense_Tracker?retryWrites=true'
-  )
+  .connect(mongoURI)
   .then(() => {
     app.listen(4000, () => {
       console.log('App started');
