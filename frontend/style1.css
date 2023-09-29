@@ -1,45 +1,32 @@
 body,
-h2,
 p {
     margin: 0;
     padding: 0;
 }
 
-/* Apply a background color to the body */
+
 body {
-    background-image: url('./images/image1.webp');
-    background-size: cover;
-    background-color: #04040491;
+    background-color: #5e5e5ee1;
     font-family: Arial, sans-serif;
 }
 
-/* Container styles */
+
 .container {
     border: 3px solid rgb(2, 230, 74);
-    max-width: 90%; /* Use relative width for better mobile responsiveness */
-    margin: 0 auto;
-    padding: 5%; /* Use relative padding for better mobile responsiveness */
-    background-color: #0ce95933;
+    max-width: 500px;
+    height: 570px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0b943b63;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: slideFromTop 1s ease-in-out, fadeIn 1s ease-in-out;
-    transition: opacity 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        /* Start with opacity 0 */
-    }
-
-    to {
-        opacity: 1;
-        /* Fade in to full opacity */
-    }
+    animation: slideFromTop 2s ease-in-out, fadeIn 2s ease-in-out;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 @keyframes slideFromTop {
     from {
-        transform: translateY(-10%);
+        transform: translateY(-40%);
         /* Start above the viewport */
     }
 
@@ -50,12 +37,12 @@ body {
 }
 
 /* Page title styles */
-h2 {
-    color: rgba(255, 253, 253, 0.984);
-    font-size: 7vw; /* Use relative font size for better mobile responsiveness */
+h1 {
+    color: rgb(2, 230, 74);
+    font-size: 28px;
     text-align: center;
-    margin-bottom: 4vw; /* Use relative margin for better mobile responsiveness */
     animation: moveUpDown 4s ease-in-out infinite;
+    /* Apply moveUpDown animation infinitely */
 }
 
 @keyframes moveUpDown {
@@ -75,24 +62,24 @@ h2 {
     }
 }
 
+/* Form styles */
 form {
     text-align: center;
 }
 
 label {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.053);
+    color: rgb(1, 1, 1);
     display: block;
-    margin-bottom: 2%; /* Use relative margin for better mobile responsiveness */
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
 input[type="number"],
 input[type="text"],
 select {
-    width: 90%; /* Use relative width for better mobile responsiveness */
-    padding: 3%; /* Use relative padding for better mobile responsiveness */
-    margin-bottom: 4%; /* Use relative margin for better mobile responsiveness */
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 2px solid #1fe259;
     border-radius: 4px;
 }
@@ -101,24 +88,26 @@ button[type="submit"],
 #rzp-button1 {
     background-color: #1b201dbd;
     color: #fff;
-    border: 2px solid rgba(47, 156, 240, 0.853);
-    padding: 3%; /* Use relative padding for better mobile responsiveness */
-    margin-top: 1%; /* Use relative margin for better mobile responsiveness */
-    font-size: 4vw; /* Use relative font size for better mobile responsiveness */
+    border: 2px solid rgb(28, 254, 8);
+    padding: 10px;
+    margin-top: 0.5%;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease-in-out;
+    /* Add background color transition */
 }
 
 button[type="submit"]:hover,
 #rzp-button1:hover {
-    background-color: #0056b3;
+    background-color: #06f746;
+    border: 2px solid black
 }
 
 /* Expense list styles */
 #user-list {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     list-style: none;
     padding: 0;
     text-align: center;
@@ -128,7 +117,7 @@ button[type="submit"]:hover,
 #user-list li {
     background-color: rgba(0, 0, 0, 0.39);
     margin-top: 2%;
-    padding: 2%; /* Use relative padding for better mobile responsiveness */
+    padding: 8px;
     color: aqua;
     border: 2px solid black;
     border-radius: 10px;
@@ -136,34 +125,45 @@ button[type="submit"]:hover,
 
 /* Premium section styles */
 #premium {
-    display: inline;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
     list-style: none;
     padding: 0;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(26, 93, 238);
+    color: rgb(252, 248, 248);
 }
 
 /* Footer paragraph styles */
 p {
     text-align: center;
-    font-size: 4vw; /* Use relative font size for better mobile responsiveness */
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 4%; /* Use relative margin for better mobile responsiveness */
+    margin-top: 20px;
     color: white;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 4%; /* Use relative gap for better mobile responsiveness */
+    gap: 20px;
+    /* Adjust the gap as needed */
 }
 
 .button-container button {
-    padding: 3% 6%; /* Use relative padding for better mobile responsiveness */
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
     background-color: #1ade2768;
+    /* Change the background color */
     color: #fff;
+    /* Change the text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 4vw; /* Use relative font size for better mobile responsiveness */
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+    border: 2px solid rgb(6, 255, 131);
+    background-color: #1b201dbd;
 }
