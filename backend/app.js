@@ -8,8 +8,8 @@ dotenv.config();
 const app = express();
 
 app.use(cors());
-
 app.use(bodyParser.json());
+
 app.use(express.static('../frontend'));
 
 const userRoutes = require('./routes/user');
@@ -31,8 +31,9 @@ const mongoURI = process.env.MONGO_URI;
 mongoose
   .connect(mongoURI)
   .then(() => {
-    app.listen(4000, () => {
-      console.log('App started');
+    const PORT = process.env.PORT || 4000;
+    app.listen(PORT, () => {
+      console.log(`App started on port ${PORT}`);
     });
   }).catch((err) => {
     console.error('Error connecting to MongoDB:', err);

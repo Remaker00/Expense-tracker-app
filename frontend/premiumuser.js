@@ -12,8 +12,8 @@ async function premiumuser() {
                 .then(data => {
                     let premium = data.premiumuser;
                     if (premium === true) {
-                        document.getElementById('rzp-button1').style.display="none";
-                        document.getElementById('premium').textContent="You Are A Premium User Now";
+                        // document.getElementById('rzp-button1').style.display="none";
+                        // document.getElementById('premium').textContent="You Are A Premium User Now";
                     }else {
                         console.log("Be our Premium Member");
                     }
