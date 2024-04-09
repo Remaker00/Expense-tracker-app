@@ -1,4 +1,4 @@
-const userLogin = document.getElementById('loginform');
+const userLogin = document.getElementById('loginForm');
 
 userLogin.addEventListener('submit', handleLogin);
 
@@ -21,7 +21,7 @@ async function handleLogin(event) {
         if (response.ok) {
             const responseData = await response.json();
 
-            localStorage.setItem('token', responseData.token);;
+            localStorage.setItem('token', responseData.token);
             console.log(`Logged in successfully!`);
             window.location.href= "expense.html";
         } else {

@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById('rzp-button1').onclick = async function (e) {
+    document.getElementById('sub_btn').onclick = async function (e) {
         e.preventDefault();
 
         const token = localStorage.getItem('token');
