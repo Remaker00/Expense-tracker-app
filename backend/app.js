@@ -26,6 +26,10 @@ app.use('/premium', premiumRoutes);
 app.use('/password', passwordRoutes);
 app.use('/resetpassword', resetpasswordRoutes);
 
+app.use('*', (req,res) => {
+  res.status(500).send({message: 'Route is not present'});
+});
+
 const mongoURI = process.env.MONGO_URI;
 
 mongoose
